@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".CreateNewTask">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F4F4" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#FFB347"
+        android:layout_height="160dp">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a new task"
+            android:textColor="#FEFEFE"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp"
+        android:background="@drawable/task_selected_design"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="-5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_title_task"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:text="Title"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/title_task"
+                android:inputType="text"
+                android:maxLength="80"
+                android:background="@drawable/task_input"
+                android:paddingStart="12dp"
+                android:textColorHint="#9A9A9A"
+                android:textColor="#000000"
+                android:hint="What is your task ?"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_statut_task"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:text="Statut"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/statut_task"
+                android:inputType="text"
+                android:background="@drawable/task_input"
+                android:paddingStart="12dp"
+                android:textColorHint="#9A9A9A"
+                android:textColor="#000000"
+                android:hint="Statut of your task"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_date_task"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:text="Timeline "
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/task_input">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/date_task"
+                        android:layout_below="@+id/buttonDate"
+                        android:hint="Pick a Date"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="16dp"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"/>
+
+                    <Button
+                        android:id="@+id/buttonDate"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/date_task"
+                        android:layout_marginLeft="30dp"
+                        android:text="Calendar" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_note_task"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:text="Note"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/note_task"
+                android:hint="Add a note"
+                android:maxLength="150"
+                android:paddingStart="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/task_input"
+                android:textColorHint="#9A9A9A"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Create Task"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        android:textColor="#FFF"
+        android:background="@drawable/button_create_task"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonCancelTask"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textColor="#9A9A9A"
+        android:background="@drawable/button_cancel_task"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        tools:ignore="HardcodedText" />
+
+  </LinearLayout>
+
+</ScrollView>
